@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+   Inserimento andato a buon fine<br>
+id | nome | cognome <br>
+    {% for ris1 in ris %}
+
+        {{ ris1.id }} | {{ ris1.name }} | {{ ris1.description }} <br>
+
+    {% endfor %}
+
+    <script > alert('inserimento andato a buon fine');</script>
+{% endblock %}
+
+
