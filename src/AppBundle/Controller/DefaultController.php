@@ -29,7 +29,7 @@ class DefaultController extends Controller
     public function  formAction(Request $request){
 
 
-        /*$prodotto= new Product();
+        $prodotto= new Product();
         $prodotto->setName('valore');
         $prodotto->setDescription('valore2');
         $prodotto->setPrice('valore2');
@@ -38,7 +38,7 @@ class DefaultController extends Controller
         $em=$this->getDoctrine()->getManager();
         $em->persist($prodotto);
         $em->flush();
-*/
+
 
         $task2=new Task();
         $form=$this->createForm(TaskType::class, $task2 );
